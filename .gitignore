@@ -1,0 +1,14 @@
+# Logs
+logs
+*.log
+
+# Dependency directories
+node_modules/
+
+# IDE files
+.vscode/
+.idea/
+
+# Miscellaneous
+*.DS_Store
+Thumbs.db

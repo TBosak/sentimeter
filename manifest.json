@@ -1,0 +1,34 @@
+{
+  "name": "Constant Context",
+  "description" : "Highlights elements with keywords on developer.chrome",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": {
+      "16": "images/cc16.png",
+      "32": "images/cc32.png"
+      },
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "images/cc16.png",
+    "32": "images/cc32.png",
+    "128": "images/cc128.png"
+  },
+  "permissions": [
+    "<all_urls>",
+    "storage"
+  ],
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "web_accessible_resources": ["style.css"],
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "js": ["bundle.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

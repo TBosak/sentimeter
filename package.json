@@ -1,0 +1,17 @@
+{
+  "name": "sentimeter",
+  "version": "1.0.0",
+  "description": "Constant Context =======",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^4.4.0",
+    "chartjs-plugin-datalabels": "^2.2.0",
+    "rxjs": "^7.8.1",
+    "vader-sentiment": "^1.1.3"
+  }
+}
